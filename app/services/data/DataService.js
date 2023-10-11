@@ -23,7 +23,7 @@ export default function DataService(){
                 Stroke.find({userId:verify.userId}, function (err,user){
                     if(err) throw err
                     if(!user){
-                        res.status(400).send('유저아이디에 맞는 정보가 없습니다...')
+                        res.status(400).send('유저아이디에 맞는 정보가 없습니다..')
                     }else{
                         Stroke.findOne({date:today}, function (err, data){
                             if(err) throw err
